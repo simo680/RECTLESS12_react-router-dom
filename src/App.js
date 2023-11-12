@@ -5,6 +5,8 @@ import Footer from "./components/Footer";
 import Homepage from './pages/Homepage';
 import Aboutpage from './pages/Aboutpage';
 import Contactpage from './pages/Contactpage'
+import NotFoundPage from "./pages/NotFoundPage";
+import ProfuctInfoPage from "./pages/ProfuctInfoPage";
 
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
           <Route path="/" element={<Homepage/>}/>
           <Route path="/about" element={<Aboutpage/>}/>
           <Route path="/contacts" element={<Contactpage/>}/>
+          <Route path="/product/:id" element={<ProfuctInfoPage/>}/>
+          <Route path='*' element={<NotFoundPage/>}/>
         </Routes>
        </Router>
 
