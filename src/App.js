@@ -12,9 +12,10 @@ import ProfuctInfoPage from "./pages/ProfuctInfoPage";
 function App() {
   return (
     <div>
-       <Header/>
+      
 
        <Router>
+       <Header/>
         <Routes>
           <Route path="/" element={<Homepage/>}/>
           <Route path="/about" element={<Aboutpage/>}/>
@@ -22,9 +23,10 @@ function App() {
           <Route path="/product/:id" element={<ProfuctInfoPage/>}/>
           <Route path='*' element={<NotFoundPage/>}/>
         </Routes>
+        <Footer/>
        </Router>
 
-       <Footer/>
+      
     </div>
   );
 }

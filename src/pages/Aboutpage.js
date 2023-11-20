@@ -18,7 +18,8 @@ function Aboutpage() {
         <div className="content">
             <ul>
                 {products.map(elem =>
-                    <Link to={'/product/'+elem.id}>
+                    <Link key={elem.id} to={'/product/'
+                    +elem.id} state={elem}>
                     <li>{elem.title}</li>
                     </Link>
                     )}
